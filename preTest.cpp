@@ -55,7 +55,34 @@ void squares()
 	glFlush();//Allows fast execution of the statements
 }
 
+void triangles() {
+	
+	glClear(GL_COLOR_BUFFER_BIT);
+	glColor3f(0.0, 0.5, 0.0);
+	glPointSize(5.0);
 
+	glBegin(GL_LINES);
+	glVertex2i(100,100);
+	glVertex2i(150,200);
+	glVertex2i(150,200);
+	glVertex2i(200, 100);
+	glVertex2i(200, 100);
+	glVertex2i(100, 100);
+
+	glEnd();
+
+	glBegin(GL_LINES);
+	glVertex2i(100, 170);
+	glVertex2i(200, 170);
+	glVertex2i(200, 170);
+	glVertex2i(150, 70);
+	glVertex2i(150, 70);
+	glVertex2i(100, 170);
+
+	glEnd();
+	glFlush();
+	
+}
 
 
 
